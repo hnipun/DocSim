@@ -1,0 +1,15 @@
+{
+  "DATABASE": {
+  },
+  "LOGGING": {
+    "ENABLE_SENTRY": false,
+    "FILE_NAME": "",
+    "MODE": "a",
+    "MAX_FILE_SIZE": 5242880,
+    "BACKUP_COUNT": 2,
+    "FORMATTER": "%(asctime)s %(levelname)s   %(message)s"
+  },
+  "MODELS": {
+    "word2vec": "/DocSim/doc_sim/sources/GoogleNews-vectors-negative300.bin"
+  }
+}
