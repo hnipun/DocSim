@@ -18,13 +18,21 @@ class Model:
 
     @staticmethod
     def load_model():
-        # Load vectors directly from the file
+        """
+        Load vectors directly from the file
+        :return:
+        """
         model = KeyedVectors.load_word2vec_format(Config().Models().read('word2vec'), binary=True)
 
         return model
 
     @staticmethod
     def word2vec(word):
+        """
+        return the vector of each word
+        :param word:
+        :return:
+        """
         vector = [0] * 300
         try:
             vector = config.model[word]

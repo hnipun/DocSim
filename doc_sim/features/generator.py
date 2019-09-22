@@ -6,11 +6,18 @@ from doc_sim.utilities import Logger
 
 class Generator:
     def __init__(self):
-        # Load vectors directly from the file
+        """
+        Load vectors directly from the file
+        """
         self._model = Model()
         self._nlp = spacy.load('en_core_web_sm')
 
-    def description_vector(self, sentence):
+    def description_vector(self, sentence: str):
+        """
+        vectorize the input sentence
+        :param sentence:
+        :return:
+        """
         Logger().info('tokenizing the sentence : {}'.format(sentence))
         target_vector = [0] * 300
 
