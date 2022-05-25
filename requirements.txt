@@ -4,6 +4,6 @@ scikit-learn==0.20.3
 gensim==3.8.0
 sentry-sdk==0.7.14
 spacy==2.1.7
-PyJWT==1.7.1
+PyJWT==2.4.0
 flasgger==0.9.2
 numpy==1.16.2
